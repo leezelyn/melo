@@ -34,7 +34,17 @@ npm test
 npm run package
 ```
 
-`npm run build` 生成 `dist/plugin.wasm` 和 manifest；`npm run package` 额外执行 ABI 与实际 WASM 回调检查，生成 `dist/HuanjianMusic-AstroBox-0.2.7.abp`。构建产物及依赖缓存不纳入源码提交。
+`npm run build` 生成 `dist/plugin.wasm` 和 manifest；`npm run package` 额外执行 ABI 与实际 WASM 回调检查，生成 `dist/HuanjianMusic-AstroBox-0.2.7.abp`。插件源所需的 `dist/manifest.json`、`dist/plugin.wasm`、`dist/icon.png` 随发布提交，其他构建产物及依赖缓存忽略。
+
+## 插件源
+
+根目录 `index.txt` 指向 `dist`。本插件收录于 [leezelyn 的插件源](https://github.com/leezelyn/AstroBox-NG-Plugin-Repo)，该源的 `index.txt` 使用：
+
+```text
+https://raw.githubusercontent.com/leezelyn/melo/refs/heads/main/
+```
+
+发布更新时先执行 `npm run package`，再一并提交源码 manifest 与上述三份发布文件。
 
 ## 代码位置
 

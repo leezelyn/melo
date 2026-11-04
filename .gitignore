@@ -1,6 +1,9 @@
 node_modules
 .toolchain
-dist
+/dist/*
+!/dist/manifest.json
+!/dist/plugin.wasm
+!/dist/icon.png
 *.abp
 output
 target
