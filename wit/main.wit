@@ -1,0 +1,14 @@
+package huanjian:music;
+
+// API Level 3 / WASI Preview 2 only.
+world psys-world-v3 {
+  import astrobox:psys-host/ui-v3;
+  import astrobox:psys-host/dialog;
+  import astrobox:psys-host/device;
+  import astrobox:psys-host/register;
+  import astrobox:psys-host/interconnect;
+  import astrobox:psys-host/thirdpartyapp;
+  import astrobox:psys-host/timer;
+  export astrobox:psys-plugin/lifecycle;
+  export astrobox:psys-plugin/event-v3;
+}
