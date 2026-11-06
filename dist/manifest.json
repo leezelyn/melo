@@ -1,7 +1,7 @@
 {
   "name": "环间音乐传歌",
   "icon": "icon.png",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "API Level 3 原生传歌插件，自动识别接收应用，支持 MP3 片段、音质、歌词与保存校验。",
   "author": "Leon",
   "website": "https://github.com/leezelyn/melo",
